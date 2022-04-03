@@ -1,16 +1,14 @@
 package addressbook;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Scanner;
 
-public class AddressBook {
+public class AddressBook{
 	static Scanner sc = new Scanner(System.in);
 	static Scanner sc1 = new Scanner(System.in);
 
-	public static void main(String[] args) {
-		System.out.println("Welcome to the address book system");
+	public void addMultiplePerson() {
 		List<Contact> collection = new ArrayList<Contact>();
 
 		int choice;
@@ -57,7 +55,7 @@ public class AddressBook {
 				System.out.println("___________________________________________");
 
 				ListIterator<Contact> listIterator = collection.listIterator();
-	
+				
 
 				while (listIterator.hasNext()) {
 					contacts = listIterator.next();

@@ -9,7 +9,7 @@ public class Contact {
 	private String phoneNumber;
 	private String emailId;
 
-	public Contact(String firstName, String lastName, String address, String city, String state, int zip, String phoneNumber,
+	Contact(String firstName, String lastName, String address, String city, String state, int zip, String phoneNumber,
 			String emailId) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -19,7 +19,6 @@ public class Contact {
 		this.zip = zip;
 		this.phoneNumber = phoneNumber;
 		this.emailId = emailId;
-	
 	}
 
 	public String getFirstName() {
